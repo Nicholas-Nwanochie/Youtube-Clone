@@ -18,10 +18,18 @@ onFormSubmit = (event) => {
   render() {
     return (
       <>
+
+        <h2 className="ui header" style={{ display: 'flex', justifyContent: "center" }}>
+
+          <div className="content" >
+            <i class="youtube icon"></i>   Welcome to your video destination
+  </div>
+        </h2>
+
 <div className="search-bar ui segment">
 <form onSubmit={this.onFormSubmit} className="ui form">
 <div className="field">
-<label>Viedo search</label>
+<label>Video search</label>
 <input  
 type="text" 
 value={this.state.term}

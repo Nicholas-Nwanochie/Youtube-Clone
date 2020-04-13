@@ -4,6 +4,8 @@ import React, { Component } from "react";
 import Youtube from "./Api/youtube";
 import VideoList from "./components/videoList";
 import VideoDetail from "./components/videodetail";
+import Footer from './components/footer'
+
 
 class App extends Component {
   state = { videos: [], selectedVideo: null };
@@ -33,7 +35,7 @@ componentDidMount(){
   render() {
     return (
       <>
-        <div className="ui container">
+        <div className="ui container ">
           <Searchbar onFormSubmit={this.onTermSubmit} />
           <div className="ui grid">
             <div className="ui row">
@@ -50,6 +52,7 @@ componentDidMount(){
               '
             </div>
           </div>
+          <Footer/>
         </div>
       </>
     );
